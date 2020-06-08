@@ -1,0 +1,118 @@
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhaina+2:wght@600&display=swap" rel="stylesheet">
+
+  </head>
+
+<body>
+<div class="container">
+ <header class="header">
+   <h1 id="title" class="text-center">Free Hypnosis Form</h1>
+   <p id="description" class="description text-center">
+     Thank you for taking the time to fill out this form.
+     <br>
+      Get your free hypnosis session to help with your fear/anxiety.
+   </p>
+ </header>
+
+ <form id="survey-form" class="form-center" action="index.html" method="post">
+
+<div class="form-group">
+  <label  id="name-label" for="name">Name</label>
+  <input type="text" name="name" id="name" value="" class="form-control" placeholder="Enter your name" required/>
+</div>
+
+<div class="form-group">
+  <label id="email-label" for="email">Email</label>
+      <input type="email" name="email" id="email" class="form-control" placeholder="Enter your Email" required/>
+</div>
+
+<div class="form-group">
+      <label id="number-label" for="number">Age <span class="clue">(optional)</span></label>
+      <input type="number" name="age" id="number" min="18" max="99" class="form-control" placeholder="Age"/>
+    </div>
+
+    <div class="form-group">
+          <p>Which option best describes your current psychological state/mood?</p>
+          <select id="dropdown" name="role" class="form-control" required/>
+            <option disabled selected value>Select current state</option>
+            <option value="very">Very fearful and anxious</option>
+            <option value="moderate">moderately fearful/anxious</option>
+            <option value="somewhat">Somewhat fearful/anxious</option>
+            <option value="No">Not fearful/anxious at all</option>
+            <option value="other">Other</option>
+          </select>
+        </div>
+
+      <div class="form-group">
+              <p>Would you like to have a free online hypnosis session?</p>
+              <label>
+                <input name="hypno-session"
+                  value="yes"  type="radio" class="input-radio" checked/>Yes, sign me up!</label>
+              <label>
+                <input name="hypno-session" value="maybe later" type="radio" class="input-radio"/>Maybe later</label>
+              <label>
+                <input name="hypno-session" value="not-sure" type="radio" class="input-radio"/>Not sure, I need more information</label>
+                  </div>
+    <div class="form-group">
+      <p>Have you ever had a hypnosis session/psychotherapy/deep guided meditation?</p>
+      <select id="history" name="hystory" class="form-control" required>
+      <option disabled selected value>Select an option</option>
+      <option value="many-times">Yes, many times</option>
+      <option value="once">Yes, only once</option>
+      <option value="never">Never</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <p>What would you like to work on/improve/release?
+        <span class="clue">(Check all that apply)</span></p>
+
+      <label><input name="improve" value="fear-of-future" type="checkbox" class="input-checkbox"
+        />Fear of future</label>
+      <label>
+        <input name="improve" value="fear-of-others" type="checkbox" class="input-checkbox"
+        />Fear of others</label>
+      <label><input name="improve"
+          value="overall-anxiety" type="checkbox" class="input-checkbox"
+        />Overall anxiety</label>
+      <label><input  name="improve"
+          value="inconfidence" type="checkbox" class="input-checkbox"
+        />Lack of confidence</label>
+        <label><input name="improve"
+          value="approach-anxiety"
+          type="checkbox" class="input-checkbox"
+        />Approach anxiety</label>
+      <label><input name="improve" value="fear-of-public-speaking"
+          type="checkbox" class="input-checkbox"/>Fear to speak in public</label>
+      <label><input name="improve"
+          value="other-fear"  type="checkbox" class="input-checkbox"
+        />Other fear</label>
+      <label><input name="improve"
+          value="other-anxiety" type="checkbox" class="input-checkbox"
+        />Other anxiety</label>
+      <label><input
+          name="improve" value="other-issue" type="checkbox"  class="input-checkbox"
+        />Other issue</label>
+    </div>
+
+  <div class="form-group">
+          <p>Do you have any questions/comments?</p>
+          <textarea id="questions" class="input-textarea" name="questions"placeholder="Enter your question/comment here..."></textarea>
+        </div>
+
+  <div class="form-group">
+          <button type="submit" id="submit" class="submit-button">
+            Submit
+          </button>
+        </div>
+      </form>
+    </div>
+
+</body>
+</html>
